@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+    <script>
+        function countWords() {
+            var input = document.getElementById("input").value;
+            var words = input.split(" ");
+            document.getElementById("output").innerHTML = words.length;
+        }
+    </script>
+</head>
+<body>
+    <textarea id="input"></textarea>
+    <br>
+    <button onclick="countWords()">Count Words</button>
+    <p id="output"></p>
+</body>
+</html>
